@@ -10,7 +10,7 @@ import numpy as np
 import pickle
 import streamlit as st
 # loading the saved model
-loaded_model = pickle.load(open('/Users/sumit/Desktop/project/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 
 def diabetesPrediction(input_data):
@@ -55,6 +55,5 @@ def main():
     st.success(diagnosis)
     
     
-if __name__ == '__main__':
-    main()
+
     
